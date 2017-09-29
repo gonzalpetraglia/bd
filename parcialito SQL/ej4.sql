@@ -1,4 +1,4 @@
-SELECT apellido, padron
+﻿SELECT apellido, padron
 FROM alumnos a
 WHERE NOT EXISTS (SELECT 1
                   FROM materias m
@@ -8,4 +8,5 @@ WHERE NOT EXISTS (SELECT 1
                                     AND n.codigo = m.codigo
                                     AND n.padron = a.padron
                                     AND n.nota >= 4
+                                    )
                  );

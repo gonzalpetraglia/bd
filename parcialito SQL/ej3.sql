@@ -1,5 +1,5 @@
-SELECT nombre
-FROM materia m
+﻿SELECT nombre
+FROM materias m
 WHERE EXISTS (SELECT 1
               FROM notas n
               WHERE n.nota >=4
